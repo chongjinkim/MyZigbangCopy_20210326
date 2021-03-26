@@ -10,7 +10,7 @@ class Room(
     val floor : Int,
     val description : String) : Serializable{
 
-    fun getFormatedPrice() : String{
+    fun getFormattedPrice() : String{
 
         if(price < 10000){
             val priceStr = NumberFormat.getNumberInstance(Locale.KOREA).format(this.price)
@@ -29,7 +29,7 @@ class Room(
         }
     }
 
-    fun getFormatedFloor() : String{
+    fun getFormattedFloor() : String{
 
         if(this.floor >= 1){
             return "${this.floor}층"

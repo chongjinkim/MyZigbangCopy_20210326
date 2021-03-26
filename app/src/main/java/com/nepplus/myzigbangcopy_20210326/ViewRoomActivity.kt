@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.nepplus.myzigbangcopy_20210326.datas.Room
 import kotlinx.android.synthetic.main.activity_view_room.*
-import kotlinx.android.synthetic.main.room_list_item.*
-import kotlinx.android.synthetic.main.room_list_item.priceTxt
-import kotlin.math.floor
+
 
 class ViewRoomActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +13,13 @@ class ViewRoomActivity : AppCompatActivity() {
 
         val roomData = intent.getSerializableExtra("Room") as Room
 
+        priceTxt.text = roomData.getFormattedPrice()
 
+        floorTxt.text = roomData.getFormattedPrice()
+
+        addressTxt.text = roomData.address
+
+        descTxt.text = roomData.description
 
 
 
