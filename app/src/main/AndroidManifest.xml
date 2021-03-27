@@ -9,15 +9,17 @@
         android:roundIcon="@mipmap/ic_Jikbang_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyZigbangCopy_20210326">
-        <activity
-
-            android:name=".ViewRoomActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".ViewRoomActivity" />
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 
